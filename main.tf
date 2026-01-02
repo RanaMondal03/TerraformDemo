@@ -22,7 +22,7 @@ resource "tls_private_key" "terraform_cicd_key" {
 }
 
 resource "aws_key_pair" "terraform_cicd_key_pair" {
-  key_name   = key_name
+  key_name   = var.key_name
   public_key = tls_private_key.terraform_cicd_key.public_key_openssh
 }
 
