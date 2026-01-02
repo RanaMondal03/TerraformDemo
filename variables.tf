@@ -9,13 +9,13 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  description = "Name of the existing EC2 key pair "
-  default = "2025"
+  description = "Name of the EC2 key pair "
+  default = "terraform_cicd_pem"
 }
 
 variable "s3_bucket_name" {
   description = "Name of the S3 bucket for remote state"
-  default = "terraform-artifacts-bucket-1"
+  default = "terraform-artifacts-bucket-3"
 }
 
 variable "name" {
